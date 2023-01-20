@@ -1,3 +1,9 @@
 *filter
 -A INPUT ! -i enp+ -p tcp -m tcp --dport 22 -j DROP
+-A INPUT ! -i enp+ -p tcp -m tcp --dport 22 -j DROP
+-A INPUT ! -i enp+ -p tcp -m tcp --dport 111 -j DROP
+-A INPUT ! -i enp+ -p tcp -m tcp --dport 5000 -j DROP
+-A INPUT ! -i enp+ -p tcp -m tcp --dport 5355 -j DROP
+-A INPUT ! -i enp+ -p tcp -m tcp --dport 6653 -j DROP
+-A INPUT ! -i enp+ -p tcp -m tcp --dport 50051 -j DROP
 COMMIT
